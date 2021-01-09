@@ -18,7 +18,8 @@ const [ cartItems, setCartItems ] = useState([]);
     db.collection('cart-items').onSnapshot((snapshot)=>{
     
       let tempCartItems = []
-      snapshot.docs.map((doc)=>{
+      // eslint-disable-next-line array-callback-return
+      snapshot.docs.map((doc) =>{
           tempCartItems.push({
               id: doc.id,
               cartItem: doc.data()
