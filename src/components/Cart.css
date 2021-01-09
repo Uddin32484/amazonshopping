@@ -1,0 +1,8 @@
+
+.Cart{
+height: 400px;
+display: flex;
+/* flex-direction: column; */
+padding:14px 18px 0px 18px;
+
+}
